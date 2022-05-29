@@ -36,7 +36,7 @@ jobs:
       - name: Test extension
         uses: wikiteq/mediawiki-extension-action@master
         with:
-          php: 7.4
-          mwbranch: REL1_35
+          php: ${{ matrix.php }}
+          mwbranch: ${{ matrix.mw }}
           extension: LockAuthor
           testgroup: extension-LockAuthor
