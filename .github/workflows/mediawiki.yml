@@ -77,4 +77,4 @@ jobs:
         run: composer update
 
       - name: Run PHPUnit
-        run: pwd && ls -al && php tests/phpunit/phpunit.php --group extension-LockAuthor
+        run: php tests/phpunit/phpunit.php --group extension-LockAuthor
